@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Mi Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+        <a href="./pagina.html" class="nav01">Sobre Mí</a>
+    </div>
+    <div class="contenedor">
+        <div class="elemento">
+            <div id="contenedorBotonesSup">
+                <input class="boton1" id="botonA" type="button" value="Sobre Mí" onclick="sobreMi()">
+                <input class="boton2" id="botonB" type="button" value="Formación" onclick="formacion()">
+            </div>
+            <div id="contenedorBotonesInf">
+                <input class="boton2" id="botonC" type="button" value="Portfolio" onclick="portfolio()">
+                <input class="boton1" id="botonD" type="button" value="Contacto" onclick="contacto()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre Mi -->
+    <div id="myModalSob" class="modalSob">
+        <div class="modal-content-Sob">
+            <span class="closeSob" onclick="Close()">&times;</span>
+            <div id="baseSob">
+                <h1 id="sobreMiATitulo1">Sobre mí</h1>
+                <br>
+                <h2 id="sobreMiATitulo2">¿Como soy?</h2>
+                <div id="sobreMiB">
+                    <p>Soy una persona entusiasta enfocada en plantearse nuevos desafíos y metas, con una predilección
+                        por
+                        el trabajo en equipo, pero con la habilidad de poder desempeñar también tareas en solitario,
+                        tengo
+                        un método de trabajo orientado a resultados, amplia disposición a nuevas técnicas y proactividad
+                        para la solución de problemas. </p>
+                    <p>Continuamente aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras
+                        demandas y tendencias tecnológicas en el campo del diseño y desarrollo de aplicaciones web en
+                        general. </p>
+                    <p>Apasionado con el trabajo que realizo, ofreciendo y aportando mis conocimientos, habilidades y
+                        experiencia, así como nuevas ideas, soluciones, personalización y seguimiento de calidad al
+                        cliente
+                        y su objetivo en cada proyecto. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formacion -->
+    <div id="myModalFor" class="modalFor">
+        <div class="modal-content-For">
+            <span class="closeFor" onclick="Close()">&times;</span>
+            <div id="baseFor">
+                <h1>Formación <br> Conocimientos técnicos y habilidades</h1>
+                <ul>
+                    <h1 class="h1Formacion">&#60&#47&#62 Desarrollo FrontEnd (lado del cliente) </h1>
+                    <ul class="ulFormacion">
+                        <li>Html</li>
+                        <li>Ccs3</li>
+                        <li>Javascript</li>
+                        <li>Responsive Web Design (Diseño adaptable) </li>
+                        <li>UX/UI - Experiencia de Usuario. Interfaz de Usuario.</li>
+                        <li>Accesibilidad y Usabilidad</li>
+                        <li>Programas: Visual Studio Code, Photoshop CS6</li>
+                    </ul>
+                    <h1 class="h1Formacion">&#9636 Desarrollo BackEnd (lado del servidor)</h1>
+                    <ul class="ulFormacion">
+                        <li>...</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                    <h1 class="h1Formacion">&#8981 Posicionamiento SEO</h1>
+                    <ul class="ulFormacion">
+                        <li>...</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                    <h1 class="h1Formacion">&#8983 Redes Sociales</h1>
+                    <ul class="ulFormacion">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="myModalPor" class="modalPor">
+        <div class="modal-content-Por">
+            <span class="closePor" onclick="Close()">&times;</span>
+            <div id="basePor">
+                <h1 class="portfolioH1">Portfolio</h1>
+                <div class="portfolioImg">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                    <img class="imagenPortfolio">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <div id="myModalCon" class="modalCon">
+        <div class="modal-content-Con">
+            <span class="closeCon" onclick="Close()">&times;</span>
+            <div id="contenedorContacto01">
+                <div id="contenedorContacto02">
+                    <div id="formulario">
+                        <h1 id="h1Contacto">Contacto</h1>
+                        <form action="/action_page.php">
+                            <label for="fnombre"></label>
+                            <input class="ingreso" type="text" id="nombre" name="nombre" required
+                                placeholder="Nombre"><br><br>
+                            <label for="email"></label>
+                            <input class="ingreso" type="email" id="email" name="email" required
+                                placeholder="email@correo.com"><br><br>
+                            <label for="lname"></label>
+                            <textarea class="ingreso" name="comentario"
+                                placeholder="Escribe tu mensaje"></textarea><br><br>
+                            <input id="enviarFormulario" type="submit" value="Enviar">
+                        </form>
+                    </div>
+                    <div id="redesSociales">
+                        <a href="" class="redes">Instagram</a>
+                        <a href="" class="redes"> Facebook</a>
+                        <a href="" class="redes">Twitter</a>
+                        <a href="" class="redes">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&#xae MaxiMaX - Web Developer</p>
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
